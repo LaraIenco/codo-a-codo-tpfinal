@@ -1,0 +1,218 @@
+.cartelera {
+    border: 1px;
+    margin-top: 2em;
+    object-fit: contain;
+}
+.section-title {
+    color: var(--text-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    margin-top: 4rem;
+} 
+.title-wrapper {
+margin: 0.6rem;
+}
+.movie-card {
+    width: 100%;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
+    background-color: var(--text-color);
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.3rem;
+    transition: 0.5s;
+    margin: 1.25em 0;
+}
+.movie-card:hover {
+    transform: scale(1.05);
+}
+.movie-poster {
+position: relative;
+padding-bottom: 100%;
+}
+
+.movie-poster img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.movie-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.6rem;
+    background-color: rgba(27, 6, 67, 0.7);
+    color: var(--text-color);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.movie-title {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 700;
+    border: none;
+}
+.movie-gener {
+    margin: 0;
+    font-size: 0.8em;
+    margin-top: 0.3rem;
+}
+.watch-Q {
+    display: inline-block;
+    margin: auto;
+    color: var(--text-color);
+    padding: 0.3rem 0.6rem;
+    border: 1px solid var(--main-color);
+    border-radius: 0.3rem;
+    font-size: 0.8em;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.buy-button {
+    position: absolute;
+    bottom: 0.6rem;
+    right: 0.6rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+    font-size: 0.8em;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.buy-button:hover {
+    background-color: var(--main-color);
+}
+.sml {
+    margin-top: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15.6em, 1fr));
+    gap: 1.25em;
+    margin: 0 1.25rem;
+}
+.movies-list {
+    display: grid;
+    gap: 2.5em;
+}
+.movie-card:hover .movie-details {
+    opacity: 1;
+}
+.ver-mas-button {
+    display: block;
+    margin: 0.9rem auto; 
+    padding: 0.6rem 1.25rem; 
+    background-color: var(--main-color); 
+    color: var(--text-color);
+    border: none;
+    border-radius: 0.3rem; 
+    cursor: pointer;
+    transition: var(--bg-color) 0.1s ease-in-out; 
+}
+
+.ver-mas-button:hover {
+    background-color: var(--bg-color);
+    border: 1px solid var(--main-color);
+}
+
+.heading {
+    max-width: 60.5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.box .box-img {
+    width: 100%;
+    height: 16.8em;
+    cursor: pointer;
+}
+.box.box-img img {
+    width: 100%;
+    height: 100%;
+}
+.box.box-img img:hover {
+transform:  translateY(-10px);
+transition: 0.2s all linear;
+}
+.owl-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.play-button {
+    position: absolute;
+    bottom: 0.6rem;
+    right: 0.6rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+    font-size: 0.8em;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.play-button:hover {
+    background-color: var(--main-color);
+}
+.subscribe-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 1.25rem; 
+  }
+  
+  .subscribe-section h3 {
+    margin-bottom: 0.6rem; 
+  }
+  
+  .subscribe-section input {
+    padding: 0.6rem;
+    border: 1px solid var(--bg-color);
+    border-radius: 0.3rem;
+    margin-bottom: 0.6rem; 
+    width: 20%;
+    text-align: center;
+  }
+  
+  .subscribe-section button {
+    padding: 0.6rem 1.2rem;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  .subscribe-section button:hover {
+    background-color: var(--bg-color);
+    border: 1px solid var(--main-color);
+  }
+  
+@media (min-width: 48em) and (max-width: 64em) {
+    .movie-card {
+      max-width: 12.5em;
+    }
+  }
+
+  @media (max-width: 47.9em) {
+    .grid {
+      grid-template-columns: repeat(auto-fill, minmax(15.6em, 1fr));
+    }
+    
+    .movie-card {
+      max-width: calc(100% - 1.5rem);
+     
+    }
+  }

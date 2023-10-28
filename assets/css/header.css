@@ -1,0 +1,149 @@
+
+section{
+    padding: 4.5rem 0 1.5rem;
+}
+    
+.logo img {
+    width: 6.25em;
+}
+.navbar {
+    display: flex;
+    column-gap: 2.4rem;
+}
+.navbar a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.navbar a:hover {
+color: var(--main-color);    
+}
+.header-icons {
+    font-size: 1.3rem;
+    cursor: pointer;
+    z-index: 100000;
+    color: var(--text-color);
+}
+
+#menu-icon {
+    display: none;
+}
+.search-box{
+    position: absolute;
+    top: 110%;
+    right: -100%;
+}
+.search-box input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    width: 17.5em;
+    box-shadow: var(--box-shadow);
+}
+.search-box.active {
+    right: 1rem;
+    transition: 0.2s;
+}
+.user{
+    position: absolute;
+    right: -100%;
+    top: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 0.5rem;
+    background: var(--text-color);
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    width: 15.6em;
+    height: 18.75em;
+  }
+.user h2{
+    font-size: 1.0rem;
+    color: var(--bg-color);
+}
+.user .login-btn {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.user .login-btn:hover {
+    background: var(--main-color);
+}
+.user input {
+    border: 1px solid var(--bg-color);
+    outline: none;
+    background: var(--text-color);
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;   
+}
+.user p {
+    font-size: 0.6rem;
+}
+.user a {
+    text-decoration: underline;
+    color: var(-text-color);
+}
+.user.active {
+    right: 2rem;
+    transition: 0.2s;
+}
+
+@media (max-width: 66.1em){
+    header {
+        padding: 1.1rem 3.75rem;
+    }
+    section {
+        padding: 3.1rem 3.75rem;
+    }
+    .home-text h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 61.9em) {
+    header {
+        padding: 1.1rem 4%;
+    }
+    section {
+        padding: 3.1rem 4%;
+    }
+    .home-text h1 {
+        font-size: 2.4rem;
+    }
+}
+@media (max-width: 48em) {
+    header{
+        padding: 12px 4%;
+    }
+#menu-icon {
+display: initial;
+}
+header .navbar {
+position: absolute;
+width: 15em;
+height: 100vh;
+top: 100%;
+right: -100%;
+display: flex;
+flex-direction: column;
+background: var(--bg-color);
+row-gap: 1.4rem;
+padding: 1.25rem;
+box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+transition: 0.2s linear;
+text-align: left;
+}
+.navbar.active {
+right: 0;
+}       
+}

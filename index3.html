@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shourtcut icon" href="./assets/media/icons/iconsmarthouse2.png" type="imagen/x-icon">
+    <title>Smart House Page</title>
+    <link rel="stylesheet" href="./assets/css/styles3.css">
+    <script src="https://kit.fontawesome.com/52afd1676d.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABZgEfZrkcjYpYUOEBzN0z9K3t8WkvMoc"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./assets/media/images/logosmarthouse.png" alt="LogoEmpresa">
+            </div>
+            <div class="nav-images">
+                <div class="cuenta">
+                    <div class="mi-cuenta">
+                        <h4>
+                            <i class="fa-solid fa-user fa-2x" style="color: #052c60;"></i>
+                            <b>MI CUENTA</b>
+                        </h4>
+                    </div>
+                    <div class="micuenta-content">
+                        <div class="ingresar">
+                            <form>
+                                <h2>Ingresar</h2>
+                                <div class="input">
+                                    <span class="icono">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </span>
+                                    <input type="email" required>
+                                    <label>Email</label>
+
+                                </div>
+                                <div class="input">
+                                    <span class="icono">
+                                        <i class="fa-solid fa-lock"></i>
+                                    </span>
+
+                                    <input type="contraseña" required>
+                                    <label>Contraseña</label>
+
+                                </div>
+                                <div class="ingreso-registro">
+                                    <label>
+                                        <input type="checkbox">
+                                        Recuérdame
+                                    </label>
+                                    <br>
+                                    <div class="ingresar-button">
+                                        <button type="submit">Ingresar</button>
+                                    </div>
+                                    <div class="registrarse">
+                                        <p>¿No tienes una cuenta?
+                                            <br>
+                                            <a href="#">Registrarse</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="carrito">
+                    <div class="carrito-icon">
+                        <h4>
+                            <i class="fa-solid fa-cart-shopping fa-2x" style="color: #052c60;"></i>
+                            <b>MI CARRITO</b>
+                        </h4>
+                    </div>
+                    <div class="carrito-content">
+                        <p class="carrito-vacio-hover">
+                        <h6>Tu carrito está vacio</h6>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <!--Slider principal-->
+        <div class="container-slider">
+            <div class="slider">
+                <img src="./assets/media/images/banner1.png" alt="" class="slider__img">
+                <img src="./assets/media/images/banner2.png" alt="" class="slider__img">
+                <img src="./assets/media/images/banner3.png" alt="" class="slider__img">
+                <img src="./assets/media/images/banner4.png" alt="" class="slider__img">
+                <img src="./assets/media/images/banner5.png" alt="" class="slider__img">
+            </div>
+            <div class="slider__btn slider__btn--right"> > </div>
+            <div class="slider__btn slider__btn--left">
+            </div>
+        </div>
+
+
+        <!--Search Box-->
+        <div class="search-box">
+            <input type="text" placeholder="Buscar...">
+            <button><img src="./assets/media/icons/lupa.png" alt=""></button>
+        </div>
+
+        <!--Información-->
+        <div class="informacion">
+            <div class="sucursales">
+                <h3>
+                    <img src="./assets/media/icons/logotelefono.png">
+                    <b>VENTA TELEFÓNICA</b>
+                </h3>
+                <a href="">
+                    <p>(011) 4469-0098</p>
+                </a>
+            </div>
+            <div class="horarios">
+                <h3>
+                    <img src="./assets/media/icons/iconreloj.png">
+                    <b>HORARIOS</b>
+                </h3>
+                <p>Lunes a viernes de 9:30 a 18:30 hs.
+                    <br>
+                    Sábados de 10 a 13 hs
+                </p>
+            </div>
+            <div class="escribinos">
+                <h3>
+                    <img src="./assets/media/icons/logocorreo.png">
+                    <b>ESCRIBINOS</b>
+                </h3>
+                <a href="">
+                    <p>ventas@smarthouse.com.ar
+                </a>
+                </p>
+            </div>
+            <div class="atención-cliente">
+                <h3>
+                    <img src="./assets/media/icons/logoredes.png">
+                    <b>ENCONTRANOS EN REDES</b>
+                </h3>
+                <p>smarthouse.arg</p>
+            </div>
+        </div>
+
+        <!--Slider Categorias-->
+        <div class="prox-compra">
+            <h3>Elegí tu próxima compra</h3>
+        </div>
+        <div class="slider-container-cat">
+            <div class="slider2">
+                <div class="slider-cat">
+                    <div class="slider-item">
+                        <a href="" target="_blank"><img src="./assets/media/images/categoria.celulares.png"
+                                alt="Categoría 1"></a>
+                        <div class="slider-item-title">CELULARES</div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="" target="_blank"><img src="./assets/media/images/categoria.smartvs.png"
+                                alt="Categoría 2"></a>
+                        <div class="slider-item-title">SMART TVS</div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="" target="_blank"><img src="./assets/media/images/categoria.heladeras.png"
+                                alt="Categoría 3"></a>
+                        <div class="slider-item-title">HELADERAS</div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="" target="_blank"><img src="./assets/media/images/categoria.cocinas.png"
+                                alt="Categoría 4"></a>
+                        <div class="slider-item-title">COCINAS</div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="" target="_blank"><img src="./assets/media/images/categoria.climatización.png"
+                                alt="Categoría 5"></a>
+                        <div class="slider-item-title">CLIMATIZACIÓN</div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="" target="_blank"><img src="./assets/media/images/categoria.laptop.png"
+                                alt="Categoría 6"></a>
+                        <div class="slider-item-title">NOTEBOOKS</div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="" target="_blank"><img src="./assets/media/images/categoria.electrohogar.png"
+                                alt="Categoría 7"></a>
+                        <div class="slider-item-title">ELECTROHOGAR</div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="" target="_blank"><img src="./assets/media/images/categoria.lavarropas.png"
+                                alt="Categoría 8"></a>
+                        <div class="slider-item-title">LAVADO</div>
+                    </div>
+                    <div class="slider-item">
+                        <a href="" target="_blank"><img src="./assets/media/images/categoria.gaming.png"
+                                alt="Categoría 9"></a>
+                        <div class="slider-item-title">GAMING</div>
+                    </div>
+
+                    <div class="slider-item">
+                        <a href="" target="_blank"><img src="./assets/media/images/categoria.musica.png"
+                                alt="Categoría 10"></a>
+                        <div class="slider-item-title">MÚSICA</div>
+                    </div>
+                </div>
+            </div>
+            <button id="leftBtn" class="slider-button">
+                < </button>
+                    <button id="rightBtn" class="slider-button"> > </button>
+        </div>
+
+        <!--Ofertas Especiales-->
+        <div class="ofertas-especiales">
+            <h3>Ofertas especiales</h3>
+        </div>
+        <div class="ofertas">
+            <div class="elemento">
+                <img src="/assets/media/images/imagen.cocina.png" alt="">
+                <h3>Cocina</h3>
+                <p>Cocina Longvie 41601X</p>
+                <h6>$650.000</h6>
+                <button class="add-to-cart" onclick="mostrarAlerta()">Añadir al Carrito</button>
+            </div>
+
+            <div class="elemento">
+                <img src="./assets/media/images/imagen.heladera.png" alt="">
+                <h3>Heladera</h3>
+                <p>Heladera Samsung</p>
+                <h6>$490.000</h6>
+                <button class="add-to-cart" onclick="mostrarAlerta()">Añadir al Carrito</button>
+            </div>
+
+            <div class="elemento">
+                <img src="./assets/media/images/imagen.smarttv.png" alt="">
+                <h3>SmartTv</h3>
+                <p>Smart TV 4K UHD Samsung 50"</p>
+                <h6>$700.000</h6>
+                <button class="add-to-cart" onclick="mostrarAlerta()">Añadir al Carrito</button>
+            </div>
+            <div class="elemento">
+                <img src="./assets/media/images/imagen.cafetera.png" alt="">
+                <h3>Cafetera</h3>
+                <p>Cafetera Eléctrica Midea</p>
+                <h6>$100.000</h6>
+                <button class="add-to-cart" onclick="mostrarAlerta()">Añadir al Carrito</button>
+            </div>
+            <div class="elemento">
+                <img src="./assets/media/images/imagen.lavarropa.png" alt="">
+                <h3>Lavarropa</h3>
+                <p>Lavarropa Samsung</p>
+                <h6>$800.000</h6>
+                <button class="add-to-cart" onclick="mostrarAlerta()">Añadir al Carrito</button>
+            </div>
+
+        </div>
+        <!--Imagenes-->
+        <div class="promos">
+            <h3>Aprovechá nuestras promos</h3>
+        </div>
+        <!--Promos-->
+        <div class="banner-container">
+            <div class="banner">
+                <img src="./assets/media/images/cards.cocina.png" alt="Banner 1">
+                <div class="banner-content">
+                    <h2>COCINAS</h2>
+                    <p>12 cuotas sin interes pagando con VISA</p>
+                    <a href="#" target="_blank">Ver más</a>
+                </div>
+            </div>
+
+            <div class="banner">
+                <img src="./assets/media/images/cards.tecnología.png" alt="Banner 2">
+                <div class="banner-content">
+                    <h2>TECNOLOGÍA</h2>
+                    <p>3 cuotas sin interés y envío gratis a todo el país</p>
+                    <a href="#" target="_blank">Ver más</a>
+                </div>
+            </div>
+
+            <div class="banner">
+                <img src="./assets/media/images/cards.calefacción.png" alt="Banner 3">
+                <div class="banner-content">
+                    <h2>CALEFACCIÓN</h2>
+                    <p>Hasta 20% de descuento pagando en efectivo</p>
+                    <a href="#" target="_blank">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <!--Slider Marcas-->
+        <div class="marcas-destacadas">
+            <h3>Nuestras marcas destacadas</h3>
+        </div>
+        <div class="slider-marcas">
+            <ul class="marcas">
+                <li class="lista-marcas">
+                    <img src="./assets/media/icons/marcas-destacadas1.png" alt="Marca 1">
+                </li>
+                <li class="lista-marcas">
+                    <img src="./assets/media/icons/marcas-destacadas2.png" alt="Marca 2">
+                </li>
+                <li class="lista-marcas">
+                    <img src="./assets/media/icons/marcas-destacadas3.png" alt="Marca 3">
+                </li>
+                <li class="lista-marcas">
+                    <img src="./assets/media/icons/marcas-destacadas4.png" alt="Marca 4">
+                </li>
+                <li class="lista-marcas">
+                    <img src="./assets/media/icons/marcas-destacadas5.png" alt="Marca 5">
+                </li>
+                <li class="lista-marcas">
+                    <img src="./assets/media/icons/marcas-destacadas6.png" alt="Marca 6">
+                </li>
+                <li class="lista-marcas">
+                    <img src="./assets/media/icons/marcas-destacadas7.png" alt="Marca 7">
+                </li>
+                <li class="lista-marcas">
+                    <img src="./assets/media/icons/marcas-destacadas8.png" alt="Marca 8">
+                </li>
+                <li class="lista-marcas">
+                    <img src="./assets/media/icons/marcas-destacadas9.png" alt="Marca 9">
+                </li>
+                <li class="lista-marcas">
+                    <img src="./assets/media/icons/marcas-destacadas10.png" alt="Marca 10">
+                </li>
+            </ul>
+        </div>
+        <!--Boton Estático-->
+        <div>
+            <a href="#" class="btn-wsp" target="_blank">
+                <i class="fa-brands fa-whatsapp fa-fade"></i>
+            </a>
+        </div>
+
+    </main>
+    <footer>
+        <div class="novedades">
+            <h4>¡No te pierdas ni una oferta! Suscribite y recibí los mejores beneficios</h4>
+            <form>
+                <input type="email" placeholder="Ingrese su email" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+        </div>
+
+        <div class="footer-container">
+            <div class="info-útil">
+                <h6>PREGUNTAS FRECUENTES</h6>
+                <a href="#">
+                    <p>Formas de pago</p>
+                </a>
+                <a href="#">
+                    <p>Botón arrepentimiento</p>
+                </a>
+                <a href="#">
+                    <p>Términos y condiciones</p>
+                </a>
+                <a href="#">
+                    <p>Defensa al consumidos</p>
+                </a>
+            </div>
+            <div class="acerca-de">
+                <h6>QUIÉNES SOMOS</h6>
+                <a href="#">
+                    <p>Ubicación</p>
+                </a>
+                <a href="#">
+                    <p>Contacto</p>
+                </a>
+                <a href="#">
+                    <p>Trabajar en SmartHouse</p>
+                </a>
+                <a href="#">
+                    <p>Blog SmartHouse</p>
+                </a>
+            </div>
+            <div class="contactános">
+                <h6>QUIERO PREGUNTAR</h6>
+                <a href="#">
+                    <p>Quiero que me llamen</p>
+                </a>
+                <a href="#">
+                    <p>(011) 4469-0098</p>
+                </a>
+                <a href="#">
+                    <p>ventas@smarthouse.com.ar</p>
+                </a>
+                <p>Lunes a viernes de 9:30 a 18:30. Sábados de 10 a 13</p>
+            </div>
+            <div class="redes">
+                <h6>REDES</h6>
+                <p>Seguinos en nuestras redes sociales</p>
+                <a href="#"><i class="fa-brands fa-facebook" style="color: #203b65"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram" style="color: #203b65;"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube" style="color: #203b65;"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok" style="color: #203b65;"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="./assets/js/script3.js"></script>
+
+</html>

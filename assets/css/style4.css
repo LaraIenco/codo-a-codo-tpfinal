@@ -1,0 +1,133 @@
+html, body {
+    height:auto;
+    margin: 0;
+}
+
+.logosticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo {
+    position: absolute;
+
+
+}
+header {
+    height: 62px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 300px);
+    z-index: 2;
+
+}
+main {
+    height: calc(100%);
+    background-color: black;
+    
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.iframe-container iframe {
+    width: 600px; 
+    height: 400px; 
+}
+
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    cursor: pointer;
+    background-color: #2b1896;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+#scroll-to-top:hover {
+    background-color: #4b2aa2;
+}
+
+.background-image {
+    background-image: url(../media/images/Fondomain.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+}
+footer {
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;        
+}
+footer a img {
+    width: 32px;
+    margin-top: 0.5rem;
+    background-color: #2b1896;
+    }
+footer div {
+    background-color: black;
+}
+footer div a {
+    color: #2b1896;
+
+}
+h1 {
+    font-family: 'Bungee Spice', cursive;
+    text-decoration: underline;
+    padding-top: 75px;
+    text-align: center;
+}
+.classic {
+    background-color: black;
+    color: #2b1896;
+    }
+
+.night {
+    color: orangered;
+    background-color: black;
+}
+
+@media (max-width: 900px) {
+ h1 {
+    padding-top: 7rem;
+ }   
+ .iframe-container iframe {
+    width: 400px; 
+    height: 300px; 
+}
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right:5px;
+    transform: translateX(5px);
+    cursor: pointer;
+    background-color: #2b1896;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+}

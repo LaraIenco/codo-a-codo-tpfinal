@@ -1,0 +1,170 @@
+@import url("./styles.css");
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--gradient-accent-color);
+    background-size: cover;
+    color: var(--primary-color);
+}
+
+#cursos {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+#cursos .presentacion-container {
+    text-align: center;
+    padding: 100px 12px;
+}
+
+#cursos .container{
+    padding: 15px 12px;
+}
+
+#cursos h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#cursos h3 {
+    font-size: 1.9em;
+    border: none;
+    border-bottom: 0.15em solid var(--accent-color);
+}
+
+#cursos p {
+    display: none;
+}
+
+#cursos ul {
+    padding-left: 0;
+}
+
+#cursos .cursoscarta {
+    padding: 50px;
+    margin: 20px;
+    border-radius: 0.9rem;
+}
+
+.cursoscarta :first-child {
+    border-radius: 0.9rem;
+    border: 0.15em solid var(--accent-color);
+    border-top: none;
+}
+
+.cursoscarta :nth-child(2) {
+    border-radius: 0.9rem;
+    border: 0.15em solid var(--accent-color);
+    border-top: none;
+}
+
+.cursoscarta :last-child {
+    border-radius: 0.9rem;
+    border: 0.15em solid var(--accent-color);
+    border-top: none;
+}
+
+#becas {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    border-top: 0.10em solid var(--accent-color);
+    border-bottom: 0.10em solid var(--accent-color);
+}
+
+#becas .container {
+    padding: 80px 12px;
+}
+
+#becas h3 {
+    font-size: 1.9em;
+}
+/* Slider */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15.6em, 1fr));
+    gap: 8em;
+    margin: 0 1.25rem;
+}
+.movie-card {
+    width: 100%;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
+    background-color: var(--text-color);
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.3rem;
+    transition: 0.5s;
+    margin: 1.25em 0;
+}
+.movie-card:hover {
+    transform: scale(1.05);
+}
+.movie-poster {
+position: relative;
+padding-bottom: 100%;
+}
+
+.movie-poster img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.movies-list {
+    display: grid;
+    gap: 2.5em;
+}
+.movie-card:hover .movie-details {
+    opacity: 1;
+}
+
+
+#nosotros .container{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#nosotros h1 {
+    margin-top: 0;
+}
+
+#nosotros ul {
+    padding-left: 0;
+}
+
+#nosotros li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#alumnos {
+    background: var(--gradient-accent-color);
+    color: var(--primary-color);
+}
+
+#alumnos .container{
+    padding: 100px 12px;
+}
+
+#alumnos h2 {
+    margin-top: 0;
+}
+
+#alumnos .testimony {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 50px;
+    margin: 20px;
+    border-radius: 0.9rem;
+}

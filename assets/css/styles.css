@@ -1,0 +1,205 @@
+@import url("./header.styles.css");
+@import url("./main.styles.css");
+@import url("./footer.styles.css");
+
+
+:root {
+  /*colors*/
+  --primary-color: #16161A;
+  --secondary-color: #FFFFFE;
+  --third-color: #94A1B2;
+  --accent-color: #FF8E3C;
+  --secondaccent-color: #d9376e;
+
+  /*gradient colors*/
+  --gradient-accent-color:
+  radial-gradient(circle,
+  rgba(255,142,60,1) 0%,
+  rgba(251,132,66,1) 10%,
+  rgba(247,123,71,1) 20%,
+  rgba(241,109,79,1) 40%,
+  rgba(235,95,87,1) 50%,
+  rgba(230,84,93,1) 70%,
+  rgba(224,71,101,1) 80%,
+  rgba(217,55,110,1) 100%);
+
+  /*tipografy*/
+  font-family: "Inter", sans-serif;
+}
+
+/*estilos generales*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 0.9em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+li {
+  font-size: 1.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.animate__animated {
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+}
+
+/*medidas reponsivas*/
+
+@media (min-width:720px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+
+  #hero h1 {
+    font-size: 3.25em;
+  }
+
+  #cursos .presentacion-container {
+    display: flex;
+  }
+
+  #cursos h2 {
+    margin-top: 0px;
+  }
+
+  #cursos .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    display: flex;
+    padding-left: 30px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #cursos .img-container {
+    background-image: url("../media/images/nuestroscursos.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+  }
+
+  #cursos .cursoscarta {
+    padding: 50px;
+  }
+
+  #cursos h3 {
+    margin-top: 0;
+  }
+
+  #cursos p {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width:1400px) {
+  #hero h1 {
+    font-size: 5em;
+  }
+
+  #hero p {
+    font-size: 3em;
+  }
+
+  button {
+    height: 60px;
+    width: auto;
+  }
+
+  #cursos .presentacion-container {
+    justify-content: space-evenly;
+  }
+
+  #cursos .texto h2 {
+    font-size: 4.5em;
+  }
+
+  #cursos .texto li {
+    font-size: 2em;
+  }
+
+  #cursos .cursoscarta h3{
+    font-size: 1.9em;
+  }
+
+  #cursos .img-container {
+    height: 600px;
+    width: 500px;
+  }
+
+  #becas h2 {
+    font-size: 4.5em;
+  }
+
+  #becas p {
+    font-size: 2em;
+  }
+
+  #nosotros h1 {
+    font-size: 5em;
+  }
+}
