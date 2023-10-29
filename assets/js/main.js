@@ -85,3 +85,15 @@ $(this).children(".youtube-icon")
   })
 })
 
+function inicializarMapa() {
+  const centroMapa = { lat: -34.5464856, lng:-58.4878535 };   
+
+  const opcionesMapa = {
+      zoom: 13, 
+      center: centroMapa, 
+  };
+
+  const mapa = new google.maps.Map(document.getElementById('map'), opcionesMapa);
+
+}
+

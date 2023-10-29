@@ -1,34 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
+
 /* Estilos para body y header*/
-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
 }
-header{
+
+header {
     height: 7vh;
     background-color: whitesmoke;
     padding: 1vh;
 }
+
 /* Estilos para la nav bar*/
 .logo img {
     max-width: 16vh;
     height: auto;
     margin: 2vh;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -44,12 +48,12 @@ nav {
     display: flex;
     align-items: center;
     font-size: 18px;
-    color:#052C60;
-    margin:4vh;
+    color: #052C60;
+    margin: 4vh;
 }
 
 h4 img {
-    max-height: 5vh; 
+    max-height: 5vh;
 }
 
 .nav-images i {
@@ -58,23 +62,26 @@ h4 img {
 }
 
 .nav-images a:hover {
-    opacity: 0.7; 
+    opacity: 0.7;
 }
 
 /* Mi cuenta y Carrito */
-.carrito, .cuenta {
+.carrito,
+.cuenta {
     position: relative;
     display: inline-block;
     z-index: 1
 }
 
-.carrito-icon, .mi-cuenta{
+.carrito-icon,
+.mi-cuenta {
     cursor: pointer;
     position: relative;
 }
 
-.carrito-content, .micuenta-content{
-    margin-top:5vh;
+.carrito-content,
+.micuenta-content {
+    margin-top: 5vh;
     display: none;
     position: absolute;
     right: 0;
@@ -85,20 +92,24 @@ h4 img {
     padding: 3vh;
     font-family: 'Poppins';
 }
-.micuenta-content form{
-  justify-content: center;
+
+.micuenta-content form {
+    justify-content: center;
 }
-.ingresar h2{
+
+.ingresar h2 {
     text-align: center;
     margin-bottom: 1vh;
 }
+
 .ingresar-button {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-.ingresar-button button{
+
+.ingresar-button button {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     padding: 0.5vh 2vh;
     font-family: 'Poppins';
@@ -108,31 +119,36 @@ h4 img {
 .ingresar-button {
     margin-top: 1vh;
 }
-.registrarse{
+
+.registrarse {
     margin-top: 1vh;
     display: flex;
     justify-content: center;
 }
-.registrarse a{
+
+.registrarse a {
     margin-top: 1vh;
     display: flex;
     justify-content: center;
 
 }
 
-.cuenta:hover .micuenta-content{
+.cuenta:hover .micuenta-content {
     display: block;
 }
+
 .carrito:hover .carrito-content {
     display: block;
 }
 
-.carrito-vacio-hover, .carrito-content h6 {
+.carrito-vacio-hover,
+.carrito-content h6 {
     font-size: 16px;
     text-align: center;
     color: #444242;
     margin: 20px 0;
 }
+
 .input {
     display: flex;
     align-items: center;
@@ -142,21 +158,22 @@ h4 img {
 label {
     margin-left: 10px;
 }
-.novedades button{
-padding: 1vh;
-background-color: whitesmoke;
-color: #031a37;
-border: none;
-cursor: pointer;
+
+.novedades button {
+    padding: 1vh;
+    background-color: whitesmoke;
+    color: #031a37;
+    border: none;
+    cursor: pointer;
 }
 
 /* Estilos para el slider principal */
 
 .container-slider {
     width: 100%;
-   position: relative;
-   overflow: hidden;
-   text-align: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
     position: relative;
 
 }
@@ -165,29 +182,33 @@ cursor: pointer;
     display: flex;
     transition: transform 0.5s ease;
 }
-.slider__section{
+
+.slider__section {
     width: 100%;
 }
 
-.slider__btn{
+.slider__btn {
     position: absolute;
     top: 50%;
     font-size: large;
     transform: translateY(-50%);
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.237) ;
+    background-color: rgba(0, 0, 0, 0.237);
     color: whitesmoke;
     padding: 1vh 2vh;
     border-radius: 100%;
 }
-.slider__img{
-   width: 100%;
-   height: auto;
+
+.slider__img {
+    width: 100%;
+    height: auto;
 }
-.slider__btn--left{
+
+.slider__btn--left {
     left: 10px;
 }
-.slider__btn--right{
+
+.slider__btn--right {
     right: 30px;
 }
 
@@ -217,7 +238,7 @@ cursor: pointer;
 .search-box button {
     margin-left: 1vh;
     background-color: whitesmoke;
-    border: 0.2vh solid  #052C60;
+    border: 0.2vh solid #052C60;
     border-radius: 0.5vh;
     cursor: pointer;
     height: 4vh;
@@ -231,15 +252,16 @@ cursor: pointer;
 
 /*Estilos para la sección de información */
 
-.informacion{
+.informacion {
     background-color: #d6d6d6;
     margin-top: -4vh;
     padding: 10vh;
     display: flex;
     justify-content: space-around;
     font-family: 'Courier New';
-    
+
 }
+
 .informacion h3 {
     display: flex;
     align-items: center;
@@ -248,8 +270,9 @@ cursor: pointer;
 }
 
 h3 img {
-    max-height: 5vh; 
+    max-height: 5vh;
 }
+
 .informacion p {
     text-align: center;
     margin-top: 2vh;
@@ -294,6 +317,7 @@ h3 img {
     overflow: hidden;
     width: 70%;
 }
+
 .slider-cat {
     display: flex;
     transition: transform 0.4s ease-in-out;
@@ -305,11 +329,13 @@ h3 img {
     margin-right: 5vh;
     margin-left: 0.5vh;
 }
+
 .slider-item {
-   text-align: center;
-   margin-top: 1vh;
-   
+    text-align: center;
+    margin-top: 1vh;
+
 }
+
 .slider-item img {
     height: auto;
     border-radius: 50%;
@@ -320,6 +346,7 @@ h3 img {
 .slider-item:hover img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
 .slider-item-title {
     margin-top: 1vh;
     font-size: 2vh;
@@ -330,19 +357,20 @@ h3 img {
 }
 
 /* Estilos de las ofertas*/
-.elemento h3{
+.elemento h3 {
     text-align: center;
     font-size: 30px;
     margin: 0;
-    padding-top:2vh ;
+    padding-top: 2vh;
 }
+
 .elemento h6 {
     padding: 2vh;
 }
 
-.ofertas{
+.ofertas {
     display: flex;
-    flex-wrap:wrap ;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -351,11 +379,13 @@ h3 img {
     padding-bottom: 2vh;
 
 }
-.elemento:hover{
-    box-shadow: 0 1vh 2vh rgba(12,32,91,1), 0 1vh 2vh rgba(12,32,91,1);
-    transform: translate(0px,-8px);
+
+.elemento:hover {
+    box-shadow: 0 1vh 2vh rgba(12, 32, 91, 1), 0 1vh 2vh rgba(12, 32, 91, 1);
+    transform: translate(0px, -8px);
 }
-.elemento{
+
+.elemento {
     width: 16%;
     margin: 2vh;
     float: left;
@@ -364,55 +394,65 @@ h3 img {
     border-radius: 5vh;
     cursor: pointer;
     padding-top: 1vh;
-    box-shadow: 0 1vh 2vh rgba(12,32,91,1), 0 3vh 5vh rgba(12,32,91,1);
+    box-shadow: 0 1vh 2vh rgba(12, 32, 91, 1), 0 3vh 5vh rgba(12, 32, 91, 1);
     transition: .2s;
     background-color: whitesmoke;
 }
-.elemento img{
-width: 18vh;
-height: 18vh;
-margin: 0 auto;
-text-align: center;
-display: block;
+
+.elemento img {
+    width: 18vh;
+    height: 18vh;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
 }
-.elemento p{
+
+.elemento p {
     text-align: center;
     color: #052C60;
     padding-top: 0 1vh;
 }
-.elemento h6{
+
+.elemento h6 {
     font-size: 26px;
     text-align: center;
     color: #052C60;
     margin: 0;
 }
-.elemento button{
+
+.elemento button {
     text-align: center;
     font-size: 24px;
-    color:#031a37;
+    color: #031a37;
     width: 100%;
     padding: 15px;
     border: 0;
     outline: none;
     cursor: pointer;
     margin-top: 5px;
-    border-bottom-left-radius:3vh;
-    border-bottom-right-radius:3vh ;
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
 }
-.add-to-cart{
-    background: rgba(33,85,152,1);
+
+.add-to-cart {
+    background: rgba(33, 85, 152, 1);
 }
+
 .add-to-cart:hover {
     color: rgb(157, 185, 226);
-  }
-.promos h3 , .prox-compra h3, .ofertas-especiales h3, .marcas-destacadas h3{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 28px;
-        padding: 4vh ;
-        color: white;
-        background: linear-gradient(90deg, rgba(166,189,223,1) 0%, rgba(120,152,198,1) 28%, rgba(80,110,152,1) 49%, rgba(33,85,152,1) 72%, rgba(29,73,130,1) 94%);
+}
+
+.promos h3,
+.prox-compra h3,
+.ofertas-especiales h3,
+.marcas-destacadas h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    padding: 4vh;
+    color: white;
+    background: linear-gradient(90deg, rgba(166, 189, 223, 1) 0%, rgba(120, 152, 198, 1) 28%, rgba(80, 110, 152, 1) 49%, rgba(33, 85, 152, 1) 72%, rgba(29, 73, 130, 1) 94%);
 }
 
 /* Estilos para promos*/
@@ -420,6 +460,7 @@ display: block;
     display: flex;
     justify-content: space-between;
 }
+
 .banner {
     margin: 2vh;
     display: flex;
@@ -430,36 +471,43 @@ display: block;
     border-radius: 3vh;
     transition: transform 0.2s, opacity 0.2s;
 }
+
 .banner:hover {
     transform: scale(1.05);
     opacity: 0.9;
 }
+
 .banner img {
     max-width: 50%;
 }
+
 .banner-content {
     text-align: left;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
+
 .banner-content h2 {
     font-size: 30px;
     margin-bottom: 10px;
 }
+
 .banner-content p {
     font-size: 15px;
     margin-bottom: 20px;
 }
+
 .banner-content a {
     display: inline-block;
     padding: 1vh 2vh;
-    color: rgba(166,189,223,1);
+    color: rgba(166, 189, 223, 1);
     text-decoration: none;
     border: solid;
     font-weight: bold;
 }
-.banner-content a:hover{
+
+.banner-content a:hover {
     color: white;
 }
 
@@ -469,35 +517,39 @@ display: block;
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
-  }
-  .marcas {
+}
+
+.marcas {
     display: inline-block;
     transition: transform 0.90s ease;
     font-size: 0;
-  }
-  .lista-marcas {
+}
+
+.lista-marcas {
     display: inline-block;
     box-sizing: border-box;
     margin-right: 10vh;
     max-width: 30vh;
-  }
-  .lista-marcas img {
+}
+
+.lista-marcas img {
     max-width: 100%;
     height: auto;
     width: 100%;
     padding: 1vh 0 0 4vh;
-  }
-  .slider-marcas:hover .marcas {
+}
+
+.slider-marcas:hover .marcas {
     transform: translateX(-100%);
-  }
+}
 
 /* Estilos para el boton fijo de contacto*/
 .btn-wsp {
     position: fixed;
     width: 7vh;
-    height:7vh;
+    height: 7vh;
     line-height: 7vh;
-    bottom:3vh;
+    bottom: 3vh;
     right: 3vh;
     color: white;
     background-color: #3366a9;
@@ -506,52 +558,60 @@ display: block;
     text-align: center;
     justify-content: center;
     font-size: 40px;
-    box-shadow: 0vh 0.1vh 1vh rgba(12,32,91,1);
+    box-shadow: 0vh 0.1vh 1vh rgba(12, 32, 91, 1);
     z-index: 100;
 }
-.btn-wsp:hover{
+
+.btn-wsp:hover {
     transform: scale(1.3);
 }
 
 /* Estilos para el footer*/
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-between;
     padding: 3vh 30vh;
-    font-family:'Trebuchet MS', sans-serif;
-    background-color: rgba(166,189,223,1);
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: rgba(166, 189, 223, 1);
 }
-.footer-container h6{
+
+.footer-container h6 {
     font-weight: 700;
     font-size: 23px;
     color: #052C60;
 }
-.footer-container p{
+
+.footer-container p {
     margin: 2vh 0;
     font-size: 17px;
     color: #444242;
 }
-.redes i{
+
+.redes i {
     font-size: 35px;
     margin-right: 1vh;
 }
-.redes i:hover{
+
+.redes i:hover {
     transform: scale(1.1);
     color: #052C60 !important;
 }
-.novedades{
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 3vh;
-background-color: rgba(33,85,152,1);
-color: white;
-font-size: 20px;
+
+.novedades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh;
+    background-color: rgba(33, 85, 152, 1);
+    color: white;
+    font-size: 20px;
 }
-.novedades h4{
-margin-right: 3vh;
+
+.novedades h4 {
+    margin-right: 3vh;
 }
-.novedades input{
+
+.novedades input {
     padding: 1vh;
     width: 50vh;
 }

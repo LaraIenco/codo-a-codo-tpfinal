@@ -1,409 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POV Point Of View</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./assets/media/img/POV favicon.ico">
 </head>
-   
-<body>     
- 
-    <header>   
-    <a href="#" class="logo"><img src="./assets/media/img/POV logo b.png" alt="logo pov"></a>  
 
-<ul class="navbar">
-<li><a href="#home">home</a></li>
-<li><a href="#peliculas">peliculas</a></li>
-<li><a href="#POV Club">Pov Club</a></li> 
-</ul>
+<body>
 
-<div class="header-icons"> 
-    <i class="fas fa-bars" id="menu-icon"></i> 
-    <i class="fas fa-search" id="search-icon"></i>
-    <i class="fas fa-user" id="user-icon"></i>
-    <i class="fas fa-ticket" id="ticket-icon"></i>
- </div>    
+    <header>
+        <a href="#" class="logo"><img src="./assets/media/img/POV logo b.png" alt="logo pov"></a>
 
- <div class="search-box">
-    <input type="search" name="" id="" placeholder="Buscar">
-</div>
+        <ul class="navbar">
+            <li><a href="#home">home</a></li>
+            <li><a href="#peliculas">peliculas</a></li>
+            <li><a href="#POV Club">Pov Club</a></li>
+        </ul>
 
- <div class="user">
-    <h2>Ingresa aca</h>
-    <input type="mail" placeholder="correo electrónico">
-    <input type="contraseña" name="" id="" placeholder="Contraseña">
-    <input type="Entrar" value="Entrar" class="login-btn">
-    <p>Olvidaste la contraseña? <a href="#">cambiar contraseña</a></p>
-    <p>Todavia no te registraste? <a href="#">Registrate acá</a></p>   
-</div> 
-</header>
-<main>
-<section class="home swiper" id="home">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide container">       
-    <img src="./assets/media/img/disney 100.jpeg" alt="">
-    <div class="home-text">
-        <span>los clasicos de disney llegan al cine</span>
-        <h1>Disney 100 años <br> vivi la magia en pov</h1>
-        <a href="#" class="btn">Comprar ahora</a>
-    </div>    
-    </div>
-    <div class="swiper-slide container">
-        <img src="./assets/media/img/WONKA-5-scaled.jpg" alt="">
-        <div class="home-text">
-            <span>la historia del chocolatero que todos aman</span>
-            <h1>la historia de <br>willy wonka</h1><br>
-            <a href="#" class="btn">Comprar ahora</a>
-    </div>    
-         </div>
-    <div class="swiper-slide container">
-        <img src="./assets/media/img/five nights fredys.jpeg" alt="">
-         <div class="home-text">
-                <span>el juego aterrador se convierte en realidad</span>
-                <h1>podras sobrevivir <br> 5 noches?</h1><br>
-                <a href="#" class="btn">Comprar ahora</a>
-    </div>       
-         </div>
-    </div> 
-    <div class="swiper-pagination"></div>
-</section>
-
-<div class="cartelera">
-    <div class="title-wrapper">
-        <h2 class="section-title">Ahora en Cartelera</h2>
-    </div>
-        
-    <ul class="grid">
-        <li>
-            <div class="movie-card">
-            <div class="movie-poster">
-                <img src="./assets/media/img/five nights fredys.jpeg" alt="">
-            </div>
-            <div class="movie-details">
-                <h3 class="movie-title">Five Nights Fredys</h3>
-                <div class="sml">
-                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 120 min</p>
-                </div>
-                <a href="" class="watch-Q">Terror</a>
-            </div>
-            <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
-            </div>
-        </li>
-
-        <li>
-            <div class="movie-card">
-            <div class="movie-poster">
-                <img src="./assets/media/img/paw-patrol-movie.jpeg" alt="">
-            </div>
-            <div class="movie-details">
-                <h3 class="movie-title">Paw Patrol</h3>
-                <div class="sml">
-                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 125 min</p>
-                </div>
-                <a href="" class="watch-Q">Animación</a>
-            </div>
-            <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
-            </div>
-        </li>
-
-        <li>
-            <div class="movie-card">
-            <div class="movie-poster">
-                <img src="./assets/media/img/Ninja_Turtles_Caos_mutante-120425984-large.jpg" alt="">
-            </div>
-            <div class="movie-details">
-                <h3 class="movie-title">Tortugas Ninjas</h3>
-                <div class="sml">
-                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 99 min</p>
-                </div>
-                <a href="" class="watch-Q">Animación</a>
-            </div>
-            <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
-        </div> 
-        </li>
-        <li>
-            <div class="movie-card">
-            <div class="movie-poster">
-                <img src="./assets/media/img/la monja.jpg" alt="">
-            </div>
- 
-            <div class="movie-details">
-                <h3 class="movie-title">La Monja II</h3>
-                <div class="sml">
-                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 109 min</p>
-                </div>
-                <a href="" class="watch-Q">Terror</a>
-            </div> 
-            <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
-            </div>
-        </li>
-
-        <li>
-            <div class="movie-card">
-            <div class="movie-poster">
-                <img src="./assets/media/img/trolls 3.jpg" alt="">
-            </div>
-            <div class="movie-details">
-                <h3 class="movie-title">Trolls 3</h3>
-                <div class="sml">
-                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 90 min</p>
-                </div>
-                <a href="" class="watch-Q">Animada</a>
-            </div>
-            <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
-            </div>
-        </li>
-
-        <li>
-            <div class="movie-card">
-            <div class="movie-poster">
-                <img src="./assets/media/img/Los_asesinos_de_la_luna-272696214-large.jpg" alt="">
-            </div>
-            <div class="movie-details">
-                <h3 class="movie-title">Los Asesinos de la Luna</h3>
-                <div class="sml">
-                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 206 min</p>
-                </div>
-                <a href="" class="watch-Q">Drama</a>
-            </div>
-            <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
-            </div> 
-        </li>       
-        <li>
-            <div class="movie-card">
-            <div class="movie-poster">
-                <img src="./assets/media/img/Scream_VI-826495425-large.jpg" alt="">
-            </div>
-            <div class="movie-details">
-                <h3 class="movie-title">Scream VI</h3>
-                <div class="sml">
-                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 123 min</p>
-                </div>
-                <a href="" class="watch-Q">Terror</a>  
-            </div>
-            <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
-            </div>
-        </li>
-
-        <li>
-            <div class="movie-card">
-            <div class="movie-poster">
-                <img src="./assets/media/img/TIP5Y2F6RRGUTEJELACOWBGYFE.jpg" alt="">
-            </div>
-            <div class="movie-details">
-                <h3 class="movie-title">Hipnosis</h3>
-                <div class="sml">
-                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 93 min</p>
-                </div>
-                <a href="" class="watch-Q">Accion</a>    
-            </div>
-            <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
-            </div>
-        </li>
-
-        <li>
-            <div class="movie-card">
-            <div class="movie-poster">
-                <img src="./assets/media/img/gran turismo.jpg" alt="">
-            </div>
-            <div class="movie-details">
-                <h3 class="movie-title">Gran Turismo</h3>
-                <div class="sml">
-                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 135 min</p>
-                </div>
-                <a href="" class="watch-Q">Accion</a>
-            </div>
-            <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
-            </div>
-        </li>
-        <li>
-            <div class="movie-card">
-            <div class="movie-poster">
-                <img src="./assets/media/img/resistencia.jpeg" alt="">
-            </div>
-            <div class="movie-details">
-                <h3 class="movie-title">Resistencia</h3>
-                <div class="sml">
-                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 133 min</p>
-                </div>
-                <a href="" class="watch-Q">Ciencia Ficción</a>
-            </div>
-            <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
-            </div>
-        </li> 
-        
-        <li>
-            <div class="movie-card">
-            <div class="movie-poster">
-                <img src="./assets/media/img/theerastourmovie.jpg" alt="">
-            </div>
-            <div class="movie-details">
-                <h3 class="movie-title">The Eras Tour Movie</h3>
-                <div class="sml">
-                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 169 min</p>
-                </div>
-                <a href="" class="watch-Q">Musical</a>
-            </div>
-            <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
-            </div>
-        </li>
-    </ul>  
-    <button class="ver-mas-button">Ver Más</button>
-</div>  
-<div class="video-container">
-    <h2 class="video-title">Mira los trailers de los próximos estrenos</h2>    
-        <div class="row">
-     <div class="youtube-video">
-     <iframe width="930" height="415" id="video_id" src="https://www.youtube.com/embed/itXzYPOSEms?si=WQZvMlYCF9Bam6Cp"
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen></iframe>
-    </div>
+        <div class="header-icons">
+            <i class="fas fa-bars" id="menu-icon"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <i class="fas fa-user" id="user-icon"></i>
+            <i class="fas fa-ticket" id="ticket-icon"></i>
         </div>
-        <div class="gallery"> 
-            <div class="item">
-             <img src="./assets/media/img/patos peli.jpeg" data-id="j0iDIPf2D8o?si=yXCIk5OiJDXIrVZ0">
-             <div class="youtube-icon">
-                <img src="./assets/media/icons/youtube logo.png">
-             </div>
-            </div>
-            <div class="item">
-                <img src="./assets/media/img/the marvels.jpeg" data-id="itXzYPOSEms?si=WQZvMlYCF9Bam6Cp">   
-                <div class="youtube-icon active">
-                    <img src="./assets/media/icons/youtube logo.png">
-                </div>   
-            </div>
-               <div class="item">
-                <img src="./assets/media/img/la maldicion del queen.jpeg" data-id="DWR47OnNhVA?si=Wi_z9TDc_Ttkj5bs">   
-                <div class="youtube-icon">
-                    <img src="./assets/media/icons/youtube logo.png">
-                </div>   
-            </div>
-               <div class="item">
-                <img src="./assets/media/img/wish.jpeg" data-id="Hbi8npbTghc?si=XthchAbWX9Y60Wz-">   
-                <div class="youtube-icon">
-                    <img src="./assets/media/icons/youtube logo.png">
-                </div>   
-            </div>                      
-        </div> 
-    </div> 
-    </div> 
-    <div class="title-wrapper">
-        <h2 class="section-title">Proximamente en cines</h2>
-    </div> 
-<div class="owl-carousel">
-    <div class="movie-card">
-        <div class="movie-poster">
-            <img src="./assets/media/img/resistencia.jpeg" alt="">
-        </div>
-        <div class="movie-details">
-            <h3 class="movie-title">Resistencia</h3>
-            <div class="sml">
-            <p class="movie-gener"><i class="fa fa-calendar" aria-hidden="true"></i>  01/01/2024</p>
-            </div>
-            <a href="" class="watch-Q">proximamente</a>
-        </div>   
-        <a href="#" class="buy-button"><i class="fa fa-play" aria-hidden="true"></i> Ver trailer</a>    
-</div>
-<div class="movie-card">
-    <div class="movie-poster">
-        <img src="./assets/media/img/wish cartelera.webp" alt="">
-    </div>
-    <div class="movie-details">
-        <h3 class="movie-title">Wish</h3>
-        <div class="sml">
-        <p class="movie-gener"><i class="fa fa-calendar" aria-hidden="true"></i>  04/01/2024</p>
-        </div>
-        <a href="" class="watch-Q">proximamente</a>
-    </div>   
-    <a href="#" class="buy-button"><i class="fa fa-play" aria-hidden="true"></i> Ver trailer</a> 
-</div>
-<div class="movie-card">
-    <div class="movie-poster">
-        <img src="./assets/media/img/the marvels cartelera.webp" alt="">
-    </div>
-    <div class="movie-details">
-        <h3 class="movie-title">The Marvels</h3>
-        <div class="sml">
-        <p class="movie-gener"><i class="fa fa-calendar" aria-hidden="true"></i>  09/11/2023</p>
-        </div>
-        <a href="" class="watch-Q">proximamente</a>
-    </div>   
-    <a href="#" class="buy-button"><i class="fa fa-play" aria-hidden="true"></i> Ver trailer</a>  
-</div>
-<div class="movie-card">
-    <div class="movie-poster">
-        <img src="./assets/media/img/patos cartelera.jpeg" alt="">
-    </div>
-    <div class="movie-details">
-        <h3 class="movie-title">Patos</h3>
-        <div class="sml">
-        <p class="movie-gener"><i class="fa fa-calendar" aria-hidden="true"></i>  04/01/2023</p>
-        </div>
-        <a href="" class="watch-Q">proximamente</a>
-    </div>   
-    <a href="#" class="buy-button"><i class="fa fa-play" aria-hidden="true"></i> Ver trailer</a>  
-</div>
-<div class="movie-card">
-    <div class="movie-poster">
-        <img src="./assets/media/img/la maldicion cartelera.jpeg" alt="">
-    </div>
-    <div class="movie-details">
-        <h3 class="movie-title">La maldicion del Queen</h3>
-        <div class="sml">
-        <p class="movie-gener"><i class="fa fa-calendar" aria-hidden="true"></i>  04/01/2023</p>
-        </div>
-        <a href="" class="watch-Q">proximamente</a>
-    </div>   
-    <a href="#" class="buy-button"><i class="fa fa-play" aria-hidden="true"></i> Ver trailer</a>  
-</div>
-</div>        
-<div class="subscribe-section">
-    <h3>Suscríbete a nuestro boletín</h3>
-    <input type="email" placeholder="Tu correo electrónico">
-    <button>Recibir promociones</button>
-  </div>
 
-</main>
-<footer>
-    <section class="footer">
-    <div class="social">
-       <a href="#"><i class="fab fa-instagram"></i></a>
-       <a href="#"><i class="fab fa-youtube"></i></a> 
-       <a href="#"><i class="fab fa-facebook"></i></a> 
-       <a href="#"><i class="fab fa-tiktok"></i></a>  
-    </div>
-<ul class="list">
-    <li>
-        <a href="#">Home</a>
-    </li>
-    <li>
-        <a href="#">Soporte</a>
-    </li>
-    <li>
-        <a href="#">Terminos de uso</a>
-    </li>
-    <li>
-        <a href="#">Contactanos</a>
-    </li>
-    <li>
-        <a href="#">Politicas de privacidad</a>
-    </li>
-</ul> 
-<p class="copyright">
-   madrigal design @ 2023
-</p>   
-</section>
-</footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script src="./assets/js/main"></script>
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="Buscar">
+        </div>
+
+        <div class="user">
+            <h2>Ingresa aca</h>
+                <input type="mail" placeholder="correo electrónico">
+                <input type="contraseña" name="" id="" placeholder="Contraseña">
+                <input type="Entrar" value="Entrar" class="login-btn">
+                <p>Olvidaste la contraseña? <a href="#">cambiar contraseña</a></p>
+                <p>Todavia no te registraste? <a href="#">Registrate acá</a></p>
+        </div>
+    </header>
+    <main>
+        <section class="home swiper" id="home">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide container">
+                    <img src="./assets/media/img/disney 100.jpeg" alt="">
+                    <div class="home-text">
+                        <span>los clasicos de disney llegan al cine</span>
+                        <h1>Disney 100 años <br> vivi la magia en pov</h1>
+                        <a href="#" class="btn">Comprar ahora</a>
+                    </div>
+                </div>
+                <div class="swiper-slide container">
+                    <img src="./assets/media/img/WONKA-5-scaled.jpg" alt="">
+                    <div class="home-text">
+                        <span>la historia del chocolatero que todos aman</span>
+                        <h1>la historia de <br>willy wonka</h1><br>
+                        <a href="#" class="btn">Comprar ahora</a>
+                    </div>
+                </div>
+                <div class="swiper-slide container">
+                    <img src="./assets/media/img/five nights fredys.jpeg" alt="">
+                    <div class="home-text">
+                        <span>el juego aterrador se convierte en realidad</span>
+                        <h1>podras sobrevivir <br> 5 noches?</h1><br>
+                        <a href="#" class="btn">Comprar ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+
+        <div class="cartelera">
+            <div class="title-wrapper">
+                <h2 class="section-title">Ahora en Cartelera</h2>
+            </div>
+
+            <ul class="grid">
+                <li>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="./assets/media/img/five nights fredys.jpeg" alt="">
+                        </div>
+                        <div class="movie-details">
+                            <h3 class="movie-title">Five Nights Fredys</h3>
+                            <div class="sml">
+                                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 120 min</p>
+                            </div>
+                            <a href="" class="watch-Q">Terror</a>
+                        </div>
+                        <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="./assets/media/img/paw-patrol-movie.jpeg" alt="">
+                        </div>
+                        <div class="movie-details">
+                            <h3 class="movie-title">Paw Patrol</h3>
+                            <div class="sml">
+                                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 125 min</p>
+                            </div>
+                            <a href="" class="watch-Q">Animación</a>
+                        </div>
+                        <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="./assets/media/img/Ninja_Turtles_Caos_mutante-120425984-large.jpg" alt="">
+                        </div>
+                        <div class="movie-details">
+                            <h3 class="movie-title">Tortugas Ninjas</h3>
+                            <div class="sml">
+                                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 99 min</p>
+                            </div>
+                            <a href="" class="watch-Q">Animación</a>
+                        </div>
+                        <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="./assets/media/img/la monja.jpg" alt="">
+                        </div>
+
+                        <div class="movie-details">
+                            <h3 class="movie-title">La Monja II</h3>
+                            <div class="sml">
+                                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 109 min</p>
+                            </div>
+                            <a href="" class="watch-Q">Terror</a>
+                        </div>
+                        <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="./assets/media/img/trolls 3.jpg" alt="">
+                        </div>
+                        <div class="movie-details">
+                            <h3 class="movie-title">Trolls 3</h3>
+                            <div class="sml">
+                                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 90 min</p>
+                            </div>
+                            <a href="" class="watch-Q">Animada</a>
+                        </div>
+                        <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="./assets/media/img/Los_asesinos_de_la_luna-272696214-large.jpg" alt="">
+                        </div>
+                        <div class="movie-details">
+                            <h3 class="movie-title">Los Asesinos de la Luna</h3>
+                            <div class="sml">
+                                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 206 min</p>
+                            </div>
+                            <a href="" class="watch-Q">Drama</a>
+                        </div>
+                        <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="./assets/media/img/Scream_VI-826495425-large.jpg" alt="">
+                        </div>
+                        <div class="movie-details">
+                            <h3 class="movie-title">Scream VI</h3>
+                            <div class="sml">
+                                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 123 min</p>
+                            </div>
+                            <a href="" class="watch-Q">Terror</a>
+                        </div>
+                        <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="./assets/media/img/TIP5Y2F6RRGUTEJELACOWBGYFE.jpg" alt="">
+                        </div>
+                        <div class="movie-details">
+                            <h3 class="movie-title">Hipnosis</h3>
+                            <div class="sml">
+                                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 93 min</p>
+                            </div>
+                            <a href="" class="watch-Q">Accion</a>
+                        </div>
+                        <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="./assets/media/img/gran turismo.jpg" alt="">
+                        </div>
+                        <div class="movie-details">
+                            <h3 class="movie-title">Gran Turismo</h3>
+                            <div class="sml">
+                                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 135 min</p>
+                            </div>
+                            <a href="" class="watch-Q">Accion</a>
+                        </div>
+                        <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="./assets/media/img/resistencia.jpeg" alt="">
+                        </div>
+                        <div class="movie-details">
+                            <h3 class="movie-title">Resistencia</h3>
+                            <div class="sml">
+                                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 133 min</p>
+                            </div>
+                            <a href="" class="watch-Q">Ciencia Ficción</a>
+                        </div>
+                        <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="./assets/media/img/theerastourmovie.jpg" alt="">
+                        </div>
+                        <div class="movie-details">
+                            <h3 class="movie-title">The Eras Tour Movie</h3>
+                            <div class="sml">
+                                <p class="movie-gener"><i class="fa fa-clock" aria-hidden="true"></i> 169 min</p>
+                            </div>
+                            <a href="" class="watch-Q">Musical</a>
+                        </div>
+                        <a href="#" class="buy-button"><i class="fa fa-ticket" aria-hidden="true"></i> Comprar</a>
+                    </div>
+                </li>
+            </ul>
+            <button class="ver-mas-button">Ver Más</button>
+        </div>
+        <div class="video-container">
+            <h2 class="video-title">Mira los trailers de los próximos estrenos</h2>
+            <div class="row">
+                <div class="youtube-video">
+                    <iframe width="930" height="415" id="video_id"
+                        src="https://www.youtube.com/embed/itXzYPOSEms?si=WQZvMlYCF9Bam6Cp" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="item">
+                    <img src="./assets/media/img/patos peli.jpeg" data-id="j0iDIPf2D8o?si=yXCIk5OiJDXIrVZ0">
+                    <div class="youtube-icon">
+                        <img src="./assets/media/icons/youtube logo.png">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/media/img/the marvels.jpeg" data-id="itXzYPOSEms?si=WQZvMlYCF9Bam6Cp">
+                    <div class="youtube-icon active">
+                        <img src="./assets/media/icons/youtube logo.png">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/media/img/la maldicion del queen.jpeg" data-id="DWR47OnNhVA?si=Wi_z9TDc_Ttkj5bs">
+                    <div class="youtube-icon">
+                        <img src="./assets/media/icons/youtube logo.png">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/media/img/wish.jpeg" data-id="Hbi8npbTghc?si=XthchAbWX9Y60Wz-">
+                    <div class="youtube-icon">
+                        <img src="./assets/media/icons/youtube logo.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="title-wrapper">
+            <h2 class="section-title">Proximamente en cines</h2>
+        </div>
+        <div class="owl-carousel">
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="./assets/media/img/resistencia.jpeg" alt="">
+                </div>
+                <div class="movie-details">
+                    <h3 class="movie-title">Resistencia</h3>
+                    <div class="sml">
+                        <p class="movie-gener"><i class="fa fa-calendar" aria-hidden="true"></i> 01/01/2024</p>
+                    </div>
+                    <a href="" class="watch-Q">proximamente</a>
+                </div>
+                <a href="#" class="buy-button"><i class="fa fa-play" aria-hidden="true"></i> Ver trailer</a>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="./assets/media/img/wish cartelera.webp" alt="">
+                </div>
+                <div class="movie-details">
+                    <h3 class="movie-title">Wish</h3>
+                    <div class="sml">
+                        <p class="movie-gener"><i class="fa fa-calendar" aria-hidden="true"></i> 04/01/2024</p>
+                    </div>
+                    <a href="" class="watch-Q">proximamente</a>
+                </div>
+                <a href="#" class="buy-button"><i class="fa fa-play" aria-hidden="true"></i> Ver trailer</a>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="./assets/media/img/the marvels cartelera.webp" alt="">
+                </div>
+                <div class="movie-details">
+                    <h3 class="movie-title">The Marvels</h3>
+                    <div class="sml">
+                        <p class="movie-gener"><i class="fa fa-calendar" aria-hidden="true"></i> 09/11/2023</p>
+                    </div>
+                    <a href="" class="watch-Q">proximamente</a>
+                </div>
+                <a href="#" class="buy-button"><i class="fa fa-play" aria-hidden="true"></i> Ver trailer</a>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="./assets/media/img/patos cartelera.jpeg" alt="">
+                </div>
+                <div class="movie-details">
+                    <h3 class="movie-title">Patos</h3>
+                    <div class="sml">
+                        <p class="movie-gener"><i class="fa fa-calendar" aria-hidden="true"></i> 04/01/2023</p>
+                    </div>
+                    <a href="" class="watch-Q">proximamente</a>
+                </div>
+                <a href="#" class="buy-button"><i class="fa fa-play" aria-hidden="true"></i> Ver trailer</a>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="./assets/media/img/la maldicion cartelera.jpeg" alt="">
+                </div>
+                <div class="movie-details">
+                    <h3 class="movie-title">La maldicion del Queen</h3>
+                    <div class="sml">
+                        <p class="movie-gener"><i class="fa fa-calendar" aria-hidden="true"></i> 04/01/2023</p>
+                    </div>
+                    <a href="" class="watch-Q">proximamente</a>
+                </div>
+                <a href="#" class="buy-button"><i class="fa fa-play" aria-hidden="true"></i> Ver trailer</a>
+            </div>
+        </div>
+        <div class="subscribe-section">
+            <h3>Suscríbete a nuestro boletín</h3>
+            <input type="email" placeholder="Tu correo electrónico">
+            <button>Recibir promociones</button>
+        </div>
+
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="map-container">
+                <h3>Encontra tu cine más cercano</h3>
+                <div id="map"></div>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Soporte</a>
+                </li>
+                <li>
+                    <a href="#">Terminos de uso</a>
+                </li>
+                <li>
+                    <a href="#">Contactanos</a>
+                </li>
+                <li>
+                    <a href="#">Politicas de privacidad</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                madrigal design @ 2023
+            </p>
+        </section>
+    </footer>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-U1iUZ8UvitzFuPQBxHR6rr9ocilS1Fs&callback=inicializarMapa"
+        async defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
 </body>
+
 </html>
