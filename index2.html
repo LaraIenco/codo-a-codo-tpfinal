@@ -81,7 +81,7 @@
                 <h2 class="section-title">Ahora en Cartelera</h2>
             </div>
 
-            <ul class="grid">
+            <ul class="grid" id="movieGrid">
                 <li>
                     <div class="movie-card">
                         <div class="movie-poster">
@@ -298,86 +298,10 @@
         <div class="title-wrapper">
             <h2 class="section-title">Proximamente en cines</h2>
         </div>
-        <div class="owl-carousel">
-            <div class="movie-card">
-                <div class="movie-poster">
-                    <img src="./assets/media/img/resistencia.jpeg" alt="">
-                </div>
-                <div class="movie-details">
-                    <h3 class="movie-title">Resistencia</h3>
-                    <div class="sml">
-                        <p class="movie-gener"><i class="fa fa-calendar" aria-hidden="true"></i> 01/01/2024</p>
-                    </div>
-                    <a href="" class="watch-Q">proximamente</a>
-                </div>
-                <a href="#" class="buy-button"><i class="fa fa-play" aria-hidden="true"></i> Ver trailer</a>
-            </div>
-            <div class="movie-card">
-                <div class="movie-poster">
-                    <img src="./assets/media/img/wish cartelera.webp" alt="">
-                </div>
-                <div class="movie-details">
-                    <h3 class="movie-title">Wish</h3>
-                    <div class="sml">
-                        <p class="movie-gener"><i class="fa fa-calendar" aria-hidden="true"></i> 04/01/2024</p>
-                    </div>
-                    <a href="" class="watch-Q">proximamente</a>
-                </div>
-                <a href="#" class="buy-button"><i class="fa fa-play" aria-hidden="true"></i> Ver trailer</a>
-            </div>
-            <div class="movie-card">
-                <div class="movie-poster">
-                    <img src="./assets/media/img/the marvels cartelera.webp" alt="">
-                </div>
-                <div class="movie-details">
-                    <h3 class="movie-title">The Marvels</h3>
-                    <div class="sml">
-                        <p class="movie-gener"><i class="fa fa-calendar" aria-hidden="true"></i> 09/11/2023</p>
-                    </div>
-                    <a href="" class="watch-Q">proximamente</a>
-                </div>
-                <a href="#" class="buy-button"><i class="fa fa-play" aria-hidden="true"></i> Ver trailer</a>
-            </div>
-            <div class="movie-card">
-                <div class="movie-poster">
-                    <img src="./assets/media/img/patos cartelera.jpeg" alt="">
-                </div>
-                <div class="movie-details">
-                    <h3 class="movie-title">Patos</h3>
-                    <div class="sml">
-                        <p class="movie-gener"><i class="fa fa-calendar" aria-hidden="true"></i> 04/01/2023</p>
-                    </div>
-                    <a href="" class="watch-Q">proximamente</a>
-                </div>
-                <a href="#" class="buy-button"><i class="fa fa-play" aria-hidden="true"></i> Ver trailer</a>
-            </div>
-            <div class="movie-card">
-                <div class="movie-poster">
-                    <img src="./assets/media/img/la maldicion cartelera.jpeg" alt="">
-                </div>
-                <div class="movie-details">
-                    <h3 class="movie-title">La maldicion del Queen</h3>
-                    <div class="sml">
-                        <p class="movie-gener"><i class="fa fa-calendar" aria-hidden="true"></i> 04/01/2023</p>
-                    </div>
-                    <a href="" class="watch-Q">proximamente</a>
-                </div>
-                <a href="#" class="buy-button"><i class="fa fa-play" aria-hidden="true"></i> Ver trailer</a>
-            </div>
-        </div>
-        <div class="subscribe-section">
-            <h3>Suscríbete a nuestro boletín</h3>
-            <input type="email" placeholder="Tu correo electrónico">
-            <button>Recibir promociones</button>
-        </div>
-
+        <div class="grid" id="movieList"></div>
     </main>
     <footer>
         <section class="footer">
-            <div class="map-container">
-                <h3>Encontra tu cine más cercano</h3>
-                <div id="map"></div>
-            </div>
             <div class="social">
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
@@ -406,15 +330,7 @@
             </p>
         </section>
     </footer>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-U1iUZ8UvitzFuPQBxHR6rr9ocilS1Fs&callback=inicializarMapa"
-        async defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+<script src="./assets/js/main.js"></script>
 </body>
-
 </html>

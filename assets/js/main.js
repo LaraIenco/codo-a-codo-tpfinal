@@ -1,9 +1,3 @@
-let search = document.querySelector('.search-box');
-document.querySelector('#search-icon').onclick = () =>{
-    search.classList.toggle('active');
-    user.classList.remove('active'); 
-    navbar.classList.remove('active');  
-}
 
 let user = document.querySelector('.user');
 document.querySelector('#user-icon').onclick = () =>{
@@ -21,19 +15,13 @@ document.querySelector('#menu-icon').onclick = () =>{
 
 const header = document.querySelector('header');
 
-// Función para cambiar el fondo del encabezado al hacer scroll
 function handleScroll() {
     if (window.scrollY > 0) {
-        // Cuando se ha desplazado, aplica un fondo de color sólido
-        header.style.backgroundColor = '#1b0643'; // Reemplaza 'yourSolidColor' con el color que desees
+        header.style.backgroundColor = '#1b0643'; 
     } else {
-        // Cuando no se ha desplazado, el fondo es transparente
         header.style.backgroundColor = 'rgba(27, 6, 67, 0.2)';
     }
 }
-
-// Agrega un evento de desplazamiento para llamar a la función cuando se desplace
-window.addEventListener('scroll', handleScroll);
 
 var swiper = new Swiper(".home", {
     spaceBetween: 30,
@@ -51,49 +39,57 @@ var swiper = new Swiper(".home", {
       prevEl: ".swiper-button-prev",
     },
   });
-  $(document).ready(function() {
-    $('.owl-carousel').owlCarousel({
-        items: 5, // Muestra 5 elementos por pantalla
-        loop: true,
-        margin: 10,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 5
-            }
-        }
+  
+document.addEventListener('DOMContentLoaded', function () {
+    const items = document.querySelectorAll('.item');
+
+    items.forEach(item => {
+        item.addEventListener('click', function () {
+            const youtubeId = this.children[0].getAttribute('data-id');
+            console.log(youtubeId);
+            items.forEach(item => {
+                item.querySelector('.youtube-icon').classList.remove('active');
+            });
+            this.querySelector('.youtube-icon').classList.add('active');
+
+            const newUrl = `https://www.youtube.com/embed/${youtubeId}`;
+            document.getElementById('video_id').src = newUrl;
+        });
     });
 });
-$(document).ready(function(){
-$(".item").click(function(){
-let youtube_id = $(this).children("img").attr("data-id");
- console.log(youtube_id);
-$(this).children(".youtube-icon")
-.addClass("active").parent()
-.siblings()
-.children(".youtube-icon")
-.removeClass("active")
 
- let newUrl = `https://www.youtube.com/embed/${youtube_id}`;
-  $("#video_id").attr("src", newUrl);
-  })
-})
 
-function inicializarMapa() {
-  const centroMapa = { lat: -34.5464856, lng:-58.4878535 };   
+const API_KEY = 'api_key=1cf50e6248dc270629e802686245c2c8';
+        const BASE_URL = 'https://api.themoviedb.org/3';
+        const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&' + API_KEY;
+        const IMG_URL = 'https://image.tmdb.org/t/p/w300';
+        function getMovies() {
+            fetch(API_URL)
+                .then(response => response.json())
+                .then(data => showMovies(data.results))
+                .catch(error => console.error('Error fetching data:', error));
+        }
 
-  const opcionesMapa = {
-      zoom: 13, 
-      center: centroMapa, 
-  };
-
-  const mapa = new google.maps.Map(document.getElementById('map'), opcionesMapa);
-
-}
-
+        function showMovies(movies) {
+            const main = document.getElementById('movieList');
+            main.innerHTML = '';
+        
+            movies.forEach(movie => {
+                const { title, overview, poster_path } = movie;
+                const movieEl = document.createElement('div');
+                movieEl.classList.add('movie-card');
+                movieEl.innerHTML = `
+                    <div class="movie-poster">
+                        <img src="${IMG_URL + poster_path}" alt="${title}">
+                    </div>
+                    <div class="movie-details">
+                        <h3 class="movie-title">${title}</h3>
+                        <p class="movie-description">${overview}</p>
+                        <a href="#" class="watch-Q">Ver Ahora</a>
+                    </div>
+                `;
+        
+                main.appendChild(movieEl);
+            });
+        }
+        getMovies();

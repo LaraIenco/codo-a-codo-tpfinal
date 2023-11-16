@@ -32,6 +32,10 @@ margin: 0.6rem;
 position: relative;
 padding-bottom: 100%;
 }
+.movie-description {
+    max-height: 100px;
+    overflow: hidden;
+}
 
 .movie-poster img {
     position: absolute;
@@ -51,6 +55,7 @@ padding-bottom: 100%;
     color: var(--text-color);
     opacity: 0;
     transition: opacity 0.3s;
+    overflow: hidden;
 }
 .movie-title {
     margin: 0;
@@ -199,6 +204,7 @@ transition: 0.2s all linear;
     background-color: var(--bg-color);
     border: 1px solid var(--main-color);
   }
+  
   
 @media (min-width: 48em) and (max-width: 64em) {
     .movie-card {

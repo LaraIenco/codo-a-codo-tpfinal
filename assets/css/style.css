@@ -45,8 +45,6 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
     height: 0.5rem; 
 }
-
-/* Añade una transición para suavizar los cambios de estilo */
 html::-webkit-scrollbar-thumb,
 html::-webkit-scrollbar-track {
     transition: background 0.2s, height 0.2s;
